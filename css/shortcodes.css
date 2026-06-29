@@ -546,7 +546,16 @@ a.themeht-link-btn:hover,
 .team-member.style3 .team-images {
     width: auto;
     height: auto;
-    border-radius: 20px;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+}
+
+.team-member.style3 .team-images img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
 }
 
 .team-member.style2 .team-call {
@@ -556,14 +565,22 @@ a.themeht-link-btn:hover,
 .team-member.style3 {
     margin-bottom: 0;
     background: var(--themeht-white-color);
-    border-radius: 0;
+    border-radius: 4px;
     overflow: hidden;
+    border: 1px solid transparent;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-member.style3:hover {
+    border-color: #ededed;
+    box-shadow: 0 4px 18px rgba(31, 80, 123, 0.12);
 }
 
 .team-member.style3 .team-description {
     background: none;
-    padding: 24px 0 0;
+    padding: 12px 12px 12px;
     margin-top: 0;
+    text-align: left;
     box-shadow: none;
     border-radius: 0;
 }

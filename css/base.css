@@ -351,6 +351,7 @@ a.themeht-btn,
 #header-wrap.fixed-header {
   animation: smoothScroll 1s forwards;
   position: fixed;
+  border-radius: 0px;
   top: 0;
   left: 0;
   width: 100%;

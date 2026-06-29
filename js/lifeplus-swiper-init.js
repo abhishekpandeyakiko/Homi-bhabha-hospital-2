@@ -116,34 +116,38 @@ var portfolioswiper3 = new Swiper(".portfolio-swiper3", {
       });
 
 var teamswiper = new Swiper(".team-swiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 5,
+        spaceBetween: 20,
         speed: 1500,
         loop: true,
         autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
-        el: "#team-pagination",
-        clickable: true,
-      },
+          el: "#team-pagination",
+          clickable: true,
+        },
         breakpoints: {
           0: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 12,
           },
-           640: {
-            slidesPerView: 1,
-            spaceBetween: 0,
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 15,
           },
           768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 3,
+            spaceBetween: 18,
           },
           1024: {
             slidesPerView: 4,
-            spaceBetween: 30,
+            spaceBetween: 18,
+          },
+          1400: {
+            slidesPerView: 5,
+            spaceBetween: 20,
           },
         },
       });
