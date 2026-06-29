@@ -200,6 +200,10 @@ a.dark-outline-btn,
     opacity: .2;
 }
 
+.themeht-btn span.book-text:after {
+    display: none;
+}
+
 .dark-bg .primary-btn:hover,
 .footer .primary-btn:hover {
     background: var(--themeht-white-color);
