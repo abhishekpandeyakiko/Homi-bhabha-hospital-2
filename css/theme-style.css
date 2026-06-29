@@ -394,3 +394,18 @@ p { margin: 0 0 25px; }
     margin-top: 10px;
   }
 }
+
+/* Custom Section Headings Resizing */
+.hb-portfolio-section .theme-title h2,
+.hb-news-events-section .theme-title h2 {
+  font-size: 32px !important;
+  line-height: 42px !important;
+}
+
+@media (max-width: 767px) {
+  .hb-portfolio-section .theme-title h2,
+  .hb-news-events-section .theme-title h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+}

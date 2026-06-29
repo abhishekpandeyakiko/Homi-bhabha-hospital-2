@@ -17,7 +17,7 @@ jQuery.fn.exists = function () {
 function swiperslider() {
 
 var portfolioswiper = new Swiper(".portfolio-swiper", {
-        slidesPerView: 1,
+        slidesPerView: 5,
         spaceBetween: 0,
         speed: 1500,
         loop: true,
@@ -43,7 +43,7 @@ var portfolioswiper = new Swiper(".portfolio-swiper", {
             spaceBetween: 0,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 0,
           },
         },
@@ -149,8 +149,8 @@ var teamswiper = new Swiper(".team-swiper", {
       });
 
 var postswiper = new Swiper(".post-swiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 4,
+        spaceBetween: 24,
         speed: 1500,
         autoplay: {
         delay: 2500,
@@ -174,8 +174,8 @@ var postswiper = new Swiper(".post-swiper", {
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 4,
+            spaceBetween: 24,
           },
         },
       });
