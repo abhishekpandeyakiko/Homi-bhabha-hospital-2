@@ -304,6 +304,7 @@ p { margin: 0 0 25px; }
   .banner-5::after { display: none; }
   .mobile-bg-img { height: 350px !important; }
   .header { margin: 0 15px 15px; }
+  .page-title { margin: 0 15px 15px !important; }
   .header-top { display: none; }
   .banner-one .banner-text { padding: 50px; }
   .form-overlap { margin-left: 0; }
@@ -408,4 +409,375 @@ p { margin: 0 0 25px; }
     font-size: 24px !important;
     line-height: 32px !important;
   }
+}
+
+/* ==========================================================================
+   ALL DOCTORS MODAL COMPONENT STYLES
+   ========================================================================== */
+.all-doctors-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999; /* Ensure it is above all headers and modals */
+  background: rgba(13, 27, 78, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.4s;
+}
+
+.all-doctors-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.all-doctors-modal-wrapper {
+  background: #f4f8fc;
+  width: 92%;
+  max-width: 1200px;
+  height: 85vh;
+  max-height: 800px;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translateY(40px) scale(0.96);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.all-doctors-modal-overlay.active .all-doctors-modal-wrapper {
+  transform: translateY(0) scale(1);
+}
+
+.all-doctors-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.all-doctors-modal-header .header-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.all-doctors-modal-header .header-badge {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--themeht-primary-color);
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.all-doctors-modal-title {
+  font-size: 26px;
+  font-weight: 900;
+  color: #0d1b4e;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.all-doctors-close-btn {
+  background: #f0f4f8;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d1b4e;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.all-doctors-close-btn:hover {
+  background: #e10b2c;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+.all-doctors-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px;
+}
+
+/* Custom Scrollbar for Modal Body */
+.all-doctors-modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+.all-doctors-modal-body::-webkit-scrollbar-track {
+  background: #f4f8fc;
+}
+.all-doctors-modal-body::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+.all-doctors-modal-body::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Grid Layout */
+.all-doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Doctor Card Styles */
+.all-doctors-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(13, 27, 78, 0.03);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.all-doctors-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -10px rgba(13, 27, 78, 0.12);
+}
+
+.all-doctors-card-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/4.5;
+  background: #eceff4;
+  overflow: hidden;
+}
+
+.all-doctors-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+}
+
+.all-doctors-card:hover .all-doctors-card-img {
+  transform: scale(1.05);
+}
+
+.all-doctors-card-info {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-doctors-card-specialty {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #0097a7;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.all-doctors-card-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0d1b4e;
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+}
+
+.all-doctors-card-degrees {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Card Hover Details Overlay */
+.all-doctors-card-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 27, 78, 0.96);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
+  z-index: 2;
+}
+
+.all-doctors-card:hover .all-doctors-card-hover-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-details-content {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.hover-specialty {
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #00e5ff;
+  letter-spacing: 1.5px;
+}
+
+.hover-name {
+  font-size: 19px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 2px 0 0 0;
+}
+
+.hover-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 12px 0;
+}
+
+.hover-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hover-details-list li {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hover-details-list li i {
+  color: #00e5ff;
+  font-size: 14px;
+}
+
+.hover-view-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--themeht-primary-color);
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hover-view-more-btn:hover {
+  background: #ffffff;
+  color: #0d1b4e !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .all-doctors-modal-wrapper {
+    height: 80vh;
+  }
+  .all-doctors-modal-header {
+    padding: 20px 24px;
+  }
+  .all-doctors-modal-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 575px) {
+  .all-doctors-modal-body {
+    padding: 20px;
+  }
+  .all-doctors-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   DOCTOR PAGE AND CARD HOVER OVERLAY STYLES
+   ========================================================================== */
+.doctor-page-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(13, 27, 78, 0.04);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-page-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(13, 27, 78, 0.12);
+}
+
+.doctor-page-card:hover .doctor-hover-overlay {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.doctor-page-card:hover .doctor-page-img-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Make sure links inside standard cards align correctly */
+.doctor-info {
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.doctor-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 27, 78, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  z-index: 5;
 }

@@ -105,6 +105,7 @@ function scrolltop() {
   //Scroll back to top
         
         var progressPath = document.querySelector('.scroll-top path');
+        if (!progressPath) return;
         var pathLength = progressPath.getTotalLength();
         progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
         progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;

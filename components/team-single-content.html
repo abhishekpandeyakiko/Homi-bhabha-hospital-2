@@ -1,0 +1,344 @@
+<!-- Page Header Banner -->
+<section class="page-title">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 id="doc-banner-name">Doctor Name</h1>
+      </div>
+      <div class="col-md-6 text-md-end mt-3 mt-md-0">
+        <div class="theme-breadcrumb-box">
+          <div class="page-breadcrumb">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+                <li class="breadcrumb-item active text-white" aria-current="page" id="doc-breadcrumb-specialty">Doctor
+                  Profile</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Doctor Main Profile Content -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Left Column: Image and Timings Card -->
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="card border-0 shadow-sm rounded p-4 mb-4 bg-white text-center">
+          <div class="position-relative d-inline-block mx-auto mb-4 rounded-circle overflow-hidden shadow-sm"
+            style="width: 200px; height: 200px; border: 5px solid #fff;">
+            <img id="doc-profile-img" src="../images/team/01.jpg" alt="Doctor" class="w-100 h-100 object-cover"
+              style="object-position: top center;">
+          </div>
+          <h3 class="mb-1 font-weight-bold text-dark" id="doc-card-name">Doctor Name</h3>
+          <p class="text-primary font-weight-bold mb-3" id="doc-card-specialty">Specialty</p>
+          <hr class="my-4 opacity-10">
+          <div class="text-start">
+            <div class="d-flex align-items-center mb-3">
+              <span class="btn-primary rounded p-2 me-3 d-flex align-items-center justify-content-center"
+                style="width: 38px; height: 38px; min-width: 38px;"><i class="bi bi-mortarboard-fill fs-5"></i></span>
+              <div>
+                <small class="text-muted d-block text-uppercase font-weight-bold"
+                  style="font-size: 10px;">Qualifications</small>
+                <span class="font-weight-semibold text-dark" id="doc-info-degrees" style="font-size: 14px;">MBBS,
+                  MD</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <span class="btn-primary rounded p-2 me-3 d-flex align-items-center justify-content-center"
+                style="width: 38px; height: 38px; min-width: 38px;"><i class="bi bi-briefcase-fill fs-5"></i></span>
+              <div>
+                <small class="text-muted d-block text-uppercase font-weight-bold"
+                  style="font-size: 10px;">Experience</small>
+                <span class="font-weight-semibold text-dark" id="doc-info-experience" style="font-size: 14px;">10+
+                  Years</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-0">
+              <span class="btn-primary rounded p-2 me-3 d-flex align-items-center justify-content-center"
+                style="width: 38px; height: 38px; min-width: 38px;"><i class="bi bi-geo-alt-fill fs-5"></i></span>
+              <div>
+                <small class="text-muted d-block text-uppercase font-weight-bold"
+                  style="font-size: 10px;">Department</small>
+                <span class="font-weight-semibold text-dark" id="doc-info-dept" style="font-size: 14px;">Oncology
+                  Department</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPD Timings Card -->
+        <div class="card border-0 shadow-sm rounded p-4 bg-white">
+          <h4 class="font-weight-bold text-dark mb-4 border-bottom pb-2 d-flex align-items-center"><i
+              class="bi bi-clock-fill text-primary me-2"></i> OPD Timings</h4>
+          <div class="table-responsive">
+            <table class="table table-borderless mb-0 align-middle" style="font-size: 14px;">
+              <tbody>
+                <tr class="border-bottom border-light">
+                  <td class="ps-0 py-2 text-muted font-weight-semibold">Monday - Friday</td>
+                  <td class="pe-0 py-2 text-end text-dark font-weight-bold" id="doc-opd-weekday">09:00 AM - 04:00 PM
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ps-0 py-2 text-muted font-weight-semibold">Saturday</td>
+                  <td class="pe-0 py-2 text-end text-dark font-weight-bold" id="doc-opd-saturday">09:00 AM - 01:00 PM
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mt-4">
+            <a href="../index.html#appointment-section" class="btn btn-primary w-100 rounded py-2 font-weight-bold"><i
+                class="bi bi-calendar-event me-2"></i> Book Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Biography & Details -->
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-sm rounded p-4 p-md-5 bg-white mb-4">
+          <h3 class="font-weight-bold text-dark mb-3">About Doctor</h3>
+          <p class="lead text-muted mb-4" id="doc-bio-lead">Doctor biography lead text...</p>
+          <div class="text-muted mb-5" id="doc-bio-body">
+            Detailed biography text explaining accomplishments, clinical contributions and general philosophy of medical
+            care.
+          </div>
+
+          <h4 class="font-weight-bold text-dark mb-4 border-bottom pb-2"><i
+              class="bi bi-patch-check-fill text-primary me-2"></i> Areas of Expertise</h4>
+          <div class="row" id="doc-expertise-list">
+            <!-- Dynamic expertise list items -->
+          </div>
+
+          <h4 class="font-weight-bold text-dark mb-4 mt-4 border-bottom pb-2"><i
+              class="bi bi-award-fill text-primary me-2"></i> Education & Fellowship</h4>
+          <ul class="list-unstyled" id="doc-education-list">
+            <!-- Dynamic education list items -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dynamic Script for Team Single Content Populate -->
+<script>
+  (function () {
+    // Database of Doctors (matching all-doctors.js)
+    const doctorsDb = {
+      "preeti-sharma": {
+        name: "Dr. Preeti Sharma",
+        slug: "preeti-sharma",
+        specialty: "Medical Oncologist",
+        img: "../images/team/01.jpg",
+        degrees: "MD, DM (Medical Oncology)",
+        experience: "12+ Years",
+        dept: "Medical Oncology Division",
+        opdWeekday: "09:00 AM - 04:00 PM",
+        opdSaturday: "09:00 AM - 01:00 PM",
+        bioLead: "Dr. Preeti Sharma is a highly recognized Medical Oncologist specializing in advanced chemotherapy, immunotherapy, and targeted treatments for solid tumors.",
+        bioBody: "With over 12 years of specialized clinical experience, Dr. Sharma has worked extensively at top cancer centers in India. Her patient-centric philosophy focuses on delivering customized therapies based on molecular profiling. She is an active participant in regional tumor boards and clinical research, ensuring her patients receive the most up-to-date and scientifically advanced therapeutic strategies.",
+        expertise: [
+          "Targeted Therapy and Immunotherapy",
+          "Breast and Gynecological Cancer Chemotherapy",
+          "Lung and Gastrointestinal Malignancies",
+          "Palliative Care and Pain Management"
+        ],
+        education: [
+          "DM in Medical Oncology from Tata Memorial Hospital (TMC), Mumbai",
+          "MD in General Medicine from Post Graduate Institute of Medical Education and Research (PGIMER), Chandigarh",
+          "MBBS from King George's Medical University (KGMU), Lucknow",
+          "Advanced Fellowship in Precision Oncology (European Society for Medical Oncology - ESMO)"
+        ]
+      },
+      "sunita-patel": {
+        name: "Dr. Sunita Patel",
+        slug: "sunita-patel",
+        specialty: "Surgical Oncologist",
+        img: "../images/team/02.jpg",
+        degrees: "MS, MCh (Surgical Oncology)",
+        experience: "15+ Years",
+        dept: "Breast & Gynecologic Surgery",
+        opdWeekday: "10:00 AM - 05:00 PM",
+        opdSaturday: "10:00 AM - 02:00 PM",
+        bioLead: "Dr. Sunita Patel is a veteran Surgical Oncologist who has pioneered breast conservation surgeries and advanced oncoplastic reconstructions in the region.",
+        bioBody: "Dr. Patel completed her MCh in Surgical Oncology and has since dedicated 15 years to treating solid tumors, specializing in gynecological malignancies and breast cancer surgeries. She is widely respected for her precise surgical techniques and commitment to minimally invasive procedures that accelerate recovery and preserve patient quality of life.",
+        expertise: [
+          "Breast Oncoplastic Surgery",
+          "Radical Hysterectomy and Gynecologic Resections",
+          "Sphincter-preserving Rectal Surgery",
+          "Soft Tissue Sarcoma Reconstructions"
+        ],
+        education: [
+          "MCh in Surgical Oncology from Cancer Institute (WIA), Adyar, Chennai",
+          "MS in General Surgery from Grant Medical College & Sir JJ Group of Hospitals, Mumbai",
+          "MBBS from Seth GS Medical College & KEM Hospital, Mumbai",
+          "Fellowship in Breast Surgical Oncology from Royal Marsden Hospital, London"
+        ]
+      },
+      "vikram-malhotra": {
+        name: "Dr. Vikram Malhotra",
+        slug: "vikram-malhotra",
+        specialty: "Radiation Oncologist",
+        img: "../images/team/03.jpg",
+        degrees: "MD, DNB (Radiation Oncology)",
+        experience: "10+ Years",
+        dept: "Radiation Oncology Division",
+        opdWeekday: "09:00 AM - 04:00 PM",
+        opdSaturday: "Closed",
+        bioLead: "Dr. Vikram Malhotra is an expert in High-Precision Radiation Therapy, utilizing advanced technologies like CyberKnife, TomoTherapy, and Brachytherapy.",
+        bioBody: "Dr. Malhotra has over a decade of experience designing complex radiotherapy programs for brain, head, neck, and pelvic tumors. He is a strong advocate for intensity-modulated radiation therapy (IMRT) and image-guided radiation therapy (IGRT), which maximize radiation impact on cancerous tissues while sparing healthy surrounding organs.",
+        expertise: [
+          "Stereotactic Radio-Surgery (SRS) and Stereotactic Body Radiotherapy (SBRT)",
+          "CyberKnife and Linear Accelerator Operations",
+          "Image-Guided Radiotherapy (IGRT)",
+          "High-Dose-Rate (HDR) Brachytherapy"
+        ],
+        education: [
+          "MD in Radiation Oncology from Sanjay Gandhi Postgraduate Institute of Medical Sciences (SGPGIMS), Lucknow",
+          "DNB in Radiation Oncology from National Board of Examinations, New Delhi",
+          "MBBS from Maulana Azad Medical College (MAMC), New Delhi",
+          "Fellowship in Stereotactic Radiotherapy from Heidelberg University Hospital, Germany"
+        ]
+      },
+      "sandeep-kapoor": {
+        name: "Dr. Sandeep Kapoor",
+        slug: "sandeep-kapoor",
+        specialty: "Robotic Oncologist",
+        img: "../images/team/04.jpg",
+        degrees: "MS, MCh (Surgical Oncology)",
+        experience: "18+ Years",
+        dept: "Robotic & Thoracic Surgical Oncology",
+        opdWeekday: "10:00 AM - 04:00 PM",
+        opdSaturday: "10:00 AM - 01:00 PM",
+        bioLead: "Dr. Sandeep Kapoor is a highly acclaimed pioneer in Robotic and Thoracic Cancer surgeries with over 18 years of academic and clinical surgical expertise.",
+        bioBody: "As one of the earliest adopters of robotic cancer surgery in India, Dr. Kapoor has successfully performed over 1,500 da Vinci robotic procedures for thoracic, colorectal, and prostate malignancies. He acts as a key national proctor training surgical residents and is widely published in high-impact medical journals.",
+        expertise: [
+          "Da Vinci Robotic Minimally Invasive Surgical Oncology",
+          "Thoracic Oncological Resections (Esophageal and Lung cancers)",
+          "Robotic Prostatectomy and Cystectomy",
+          "Whipple Surgery and Complex Pancreatic Procedures"
+        ],
+        education: [
+          "MCh in Surgical Oncology from Tata Memorial Hospital (TMC), Mumbai",
+          "MS in General Surgery from King George's Medical University (KGMU), Lucknow",
+          "MBBS from Armed Forces Medical College (AFMC), Pune",
+          "Certified Robotic Console Surgeon (Intuitive Surgical, USA)"
+        ]
+      },
+      "anjali-mehta": {
+        name: "Dr. Anjali Mehta",
+        slug: "anjali-mehta",
+        specialty: "Hemato Oncologist",
+        img: "../images/team/05.jpg",
+        degrees: "MD, DM (Clinical Hematology)",
+        experience: "8+ Years",
+        dept: "Hematology & BMT Unit",
+        opdWeekday: "09:00 AM - 03:00 PM",
+        opdSaturday: "09:00 AM - 12:00 PM",
+        bioLead: "Dr. Anjali Mehta is an expert Hematologist-Oncologist specializing in Leukemia, Lymphoma, Myeloma, and Autologous/Allogeneic Bone Marrow Transplantation.",
+        bioBody: "Dr. Mehta heads our Bone Marrow Transplant unit. She has successfully managed numerous BMT cases in pediatric and adult patients. Her research in benign and malignant blood disorders has earned her multiple national accolades. She works tirelessly to make transplant procedures accessible and affordable.",
+        expertise: [
+          "Bone Marrow and Stem Cell Transplantation",
+          "Acute and Chronic Leukemia Management",
+          "Lymphoma and Multiple Myeloma Targeted Care",
+          "Refractory Anemia and Bleeding Disorders"
+        ],
+        education: [
+          "DM in Clinical Hematology from Medical College Kolkata",
+          "MD in Pediatrics from Post Graduate Institute of Medical Education and Research (PGIMER), Chandigarh",
+          "MBBS from Lady Hardinge Medical College (LHMC), New Delhi",
+          "Fellowship in Bone Marrow Transplantation from National University Hospital (NUH), Singapore"
+        ]
+      },
+      "rohan-gupta": {
+        name: "Dr. Rohan Gupta",
+        slug: "rohan-gupta",
+        specialty: "Surgical Oncologist",
+        img: "../images/team/06.jpg",
+        degrees: "MS, MCh (Surgical Oncology)",
+        experience: "11+ Years",
+        dept: "Head & Neck Surgical Oncology",
+        opdWeekday: "09:30 AM - 04:30 PM",
+        opdSaturday: "09:30 AM - 01:30 PM",
+        bioLead: "Dr. Rohan Gupta specializes in surgical resections of complex Head & Neck cancers, Skull Base surgeries, and microvascular reconstructions.",
+        bioBody: "With 11 years of surgical tenure, Dr. Gupta has built a reputation for achieving outstanding functional and aesthetic outcomes in oral cancer and head-neck resections. He works closely with plastic surgery and rehabilitation teams to ensure patients regain speech, swallowing, and appearance post-surgery.",
+        expertise: [
+          "Oral and Laryngeal Cancer Surgery",
+          "Thyroid and Parathyroid Resections",
+          "Skull Base Surgical Resections",
+          "Microvascular Free Flap Reconstructions"
+        ],
+        education: [
+          "MCh in Surgical Oncology from Kidwai Memorial Institute of Oncology, Bengaluru",
+          "MS in General Surgery from Sawai Man Singh (SMS) Medical College, Jaipur",
+          "MBBS from University College of Medical Sciences (UCMS), Delhi",
+          "Fellowship in Head and Neck Oncology from Memorial Sloan Kettering Cancer Center, New York"
+        ]
+      }
+    };
+
+    // Parse URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const doctorKey = urlParams.get('doc') || 'preeti-sharma';
+    const doctor = doctorsDb[doctorKey] || doctorsDb['preeti-sharma'];
+
+    // Update Elements
+    document.title = `${doctor.name} - Specialist Profile | Homi Bhabha Cancer Hospital`;
+    document.getElementById('doc-banner-name').textContent = doctor.name;
+    document.getElementById('doc-card-name').textContent = doctor.name;
+    document.getElementById('doc-breadcrumb-specialty').textContent = doctor.specialty;
+    document.getElementById('doc-card-specialty').textContent = doctor.specialty;
+    document.getElementById('doc-profile-img').src = doctor.img;
+    document.getElementById('doc-profile-img').alt = doctor.name;
+    document.getElementById('doc-info-degrees').textContent = doctor.degrees;
+    document.getElementById('doc-info-experience').textContent = doctor.experience;
+    document.getElementById('doc-info-dept').textContent = doctor.dept;
+    document.getElementById('doc-opd-weekday').textContent = doctor.opdWeekday;
+    document.getElementById('doc-opd-saturday').textContent = doctor.opdSaturday;
+    document.getElementById('doc-bio-lead').textContent = doctor.bioLead;
+    document.getElementById('doc-bio-body').innerHTML = `<p>${doctor.bioBody}</p>`;
+
+    // Populate Expertise List
+    const expertiseList = document.getElementById('doc-expertise-list');
+    expertiseList.innerHTML = '';
+    doctor.expertise.forEach(item => {
+      const col = document.createElement('div');
+      col.className = 'col-md-6 mb-3';
+      col.innerHTML = `
+        <div class="d-flex align-items-center">
+          <i class="bi bi-check-circle-fill text-primary me-2"></i>
+          <span class="text-secondary font-weight-semibold" style="font-size: 14px;">${item}</span>
+        </div>
+      `;
+      expertiseList.appendChild(col);
+    });
+
+    // Populate Education List
+    const educationList = document.getElementById('doc-education-list');
+    educationList.innerHTML = '';
+    doctor.education.forEach(item => {
+      const li = document.createElement('li');
+      li.className = 'd-flex align-items-start mb-3';
+      li.innerHTML = `
+        <i class="bi bi-mortarboard-fill text-primary me-3 fs-5" style="margin-top: 2px;"></i>
+        <span class="text-secondary font-weight-semibold" style="font-size: 14px; line-height: 1.6;">${item}</span>
+      `;
+      educationList.appendChild(li);
+    });
+
+    // Hide preloader once loaded
+    setTimeout(() => {
+      const preloader = document.getElementById('ht-preloader');
+      if (preloader) {
+        preloader.classList.add('loaded');
+        setTimeout(() => preloader.style.display = 'none', 500);
+      }
+    }, 300);
+
+  })();
+</script>

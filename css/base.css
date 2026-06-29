@@ -908,9 +908,13 @@ a.themeht-btn,
   position: relative;
   padding: 40px;
   background: var(--themeht-bg-light-color);
-  margin: 0 50px;
+  margin: 0 30px;
   border-radius: 20px;
   overflow: hidden;
+}
+
+.page-wrapper {
+  background: white;
 }
 
 .page-title h1 {

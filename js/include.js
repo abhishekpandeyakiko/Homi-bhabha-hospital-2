@@ -20,7 +20,7 @@
     "js/lifeplus-swiper-init.js",
     "js/color-customize/color-customizer.js",
     "js/jquery.magnific-popup.min.js",
-    "js/theme-script.js",
+    "js/theme-script.js?v=2",
     "js/director-msg.js"
   ];
 
