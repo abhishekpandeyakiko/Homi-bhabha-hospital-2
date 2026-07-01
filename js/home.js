@@ -839,6 +839,29 @@
   }
 
   /*------------------------------------
+    SECTION 8: Visitor Counter Logic
+  --------------------------------------*/
+  function initVisitorCounter() {
+    var countContainer = document.getElementById('visitor-count-container');
+    if (!countContainer) return;
+    
+    var currentCount = localStorage.getItem('visitor_count');
+    if (!currentCount) {
+      currentCount = 18427;
+    } else {
+      currentCount = parseInt(currentCount) + 1;
+    }
+    localStorage.setItem('visitor_count', currentCount);
+    
+    var countStr = currentCount.toString();
+    while (countStr.length < 6) {
+      countStr = '0' + countStr;
+    }
+    
+    countContainer.innerHTML = '<i class="bi bi-people-fill me-2"></i>Visitor No: <span class="visitor-count-num">' + countStr + '</span>';
+  }
+
+  /*------------------------------------
     Document Ready and Window Load Bindings
   --------------------------------------*/
   $(document).ready(function() {    
@@ -848,6 +871,7 @@
       imgReveal();
       initDirectorReadMore();
       initModalTrigger();
+      initVisitorCounter();
       
       counter();
       magnificpopup();

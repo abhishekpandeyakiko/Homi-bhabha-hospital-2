@@ -1661,3 +1661,22 @@ p {
     padding: 22px;
   }
 }
+
+.visitor-counter {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--themeht-white-color);
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.visitor-count-num {
+  color: var(--themeht-secondary-color);
+  font-weight: 700;
+  margin-left: 5px;
+  font-family: monospace;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
