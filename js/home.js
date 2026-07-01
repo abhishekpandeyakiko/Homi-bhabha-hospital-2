@@ -171,6 +171,10 @@
       spaceBetween: 0,
       speed: 1500,
       effect: "fade",
+      fadeEffect: {
+        crossFade: true
+      },
+      watchSlidesProgress: true,
       autoplay: {
         delay: 7000,
         disableOnInteraction: false,
@@ -181,6 +185,7 @@
         prevEl: "#banner-swiper-button-prev",
       },
     });
+
 
     var serviceswiper = new Swiper(".service-swiper", {
       slidesPerView: 4,
