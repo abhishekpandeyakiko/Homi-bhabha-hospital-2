@@ -1680,3 +1680,38 @@ p {
   font-size: 16px;
   letter-spacing: 1px;
 }
+
+/* ------------------------------------------------
+   Magnific Popup Custom Close Button Overrides
+------------------------------------------------ */
+.mfp-iframe-holder .mfp-close,
+.mfp-image-holder .mfp-close,
+.mfp-close {
+  color: #ffffff !important;
+  background: var(--themeht-primary-color) !important;
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 36px !important; /* aligned text height */
+  border-radius: 50% !important;
+  top: -45px !important;
+  right: 0px !important;
+  opacity: 1 !important;
+  padding: 0 !important;
+  font-size: 24px !important;
+  text-align: center !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+}
+
+.mfp-iframe-holder .mfp-close:hover,
+.mfp-image-holder .mfp-close:hover,
+.mfp-close:hover {
+  background: var(--themeht-secondary-color) !important;
+  color: var(--themeht-text-color) !important;
+  transform: scale(1.1) rotate(90deg) !important;
+  cursor: pointer !important;
+}
