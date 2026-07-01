@@ -4,24 +4,9 @@
 
   // Array of scripts to load in order after components are injected
   var scripts = [
-    "js/jquery.min.js",
-    "js/bootstrap.bundle.min.js",
-    "js/jquery-appear.js",
-    "js/odometer.min.js",
-    "js/circle-progressbar.js",
-    "js/jquery.countdown.min.js",
-    "js/jquery-ui.js",
-    "js/splitting.min.js",
-    "js/scrolltrigger.min.js",
-    "js/gsap.min.js",
-    "js/gsap-animation.js",
-    "js/img-reveal.js",
-    "js/swiper-bundle.min.js",
-    "js/lifeplus-swiper-init.js",
-    "js/color-customize/color-customizer.js",
-    "js/jquery.magnific-popup.min.js",
-    "js/theme-script.js?v=2",
-    "js/director-msg.js"
+    "js/library.js",
+    "js/header.js",
+    "js/home.js"
   ];
 
   function loadScript(index) {
