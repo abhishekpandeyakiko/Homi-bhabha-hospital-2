@@ -407,9 +407,9 @@ p {
 
 .banner-slider.swiper .swiper-button-prev,
 .banner-slider.swiper .swiper-button-next {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
 }
 
 .banner-slider.swiper .swiper-button-next:after,

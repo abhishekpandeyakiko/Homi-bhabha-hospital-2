@@ -68,7 +68,6 @@
 
 .themeht-btn i,
 .post-arrow i,
-.marquee-icon-box i,
 .video-round-text i,
 .service-item.style-1 .service-icon i,
 .featured-item.style-1 i {
@@ -78,7 +77,6 @@
 
 .themeht-btn:hover i,
 .post-card.style-1:hover .post-arrow,
-.marquee-icon-box:hover i,
 .video-round-text:hover i,
 .service-item.style-1:hover .service-icon i,
 .featured-item.style-1:hover i {
@@ -295,17 +293,34 @@ a.themeht-link-btn:hover,
     box-shadow: 0 12px 34px 0 rgba(14, 17, 44, 0.06);
     margin: 15px 10px 30px;
     text-align: center;
+    transition: all 0.5s ease-in-out;
 }
 
 .marquee-icon-box i {
     color: var(--themeht-primary-color);
     font-size: 50px;
     line-height: 1;
+    transition: all 0.5s ease-in-out;
 }
 
 .marquee-icon-box h5 {
     margin-bottom: 0;
     margin-top: 15px;
+    color: var(--themeht-text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.marquee-icon-box:hover {
+    background: var(--themeht-primary-color);
+    box-shadow: 0 15px 40px 0 rgba(14, 17, 44, 0.15);
+}
+
+.marquee-icon-box:hover i {
+    color: var(--themeht-white-color);
+}
+
+.marquee-icon-box:hover h5 {
+    color: var(--themeht-white-color);
 }
 
 
